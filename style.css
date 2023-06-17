@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(./font/Inter-Regular.ttf) format('truetype'),
+        url(./font/Inter-Bold.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 250px 130px;
+}
+
+main div {
+    width: 590px;
+}
+
+main div p {
+    font: 400 24px 'Inter';
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 16px;
+}
+
+main div h2 {
+    font: 700 48px 'Inter';
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons div {
+    background: #6F1DF4;
+    border-radius: 8px;
+    font: 700 16px 'Inter';
+    color: #FFFFFF;
+    width: 147px;
+    text-align: center;
+    padding: 18px 0;
+    margin-right: 24px;
+}
+
+main h1 {
+    font: 700 250px 'Inter';
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        margin: 123px 24px;
+    }
+
+    main div {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .buttons div {
+        margin-right: 12px;
+    }
+
+    main h1 {
+        font: 700 130px 'Inter';
+        text-align: center;
+    }
+
+    main div p {
+        font: 400 20px 'Inter';
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    main div h2 {
+        font: 700 32px 'Inter';
+        margin-bottom: 32px;
+        text-align: center;;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        margin: 100px 16px;
+    }
+
+    main div {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons div {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    main h1 {
+        font: 700 80px 'Inter';
+        text-align: center;
+    }
+
+    main div p {
+        font: 400 18px 'Inter';
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    main div h2 {
+        font: 700 28px 'Inter';
+        margin-bottom: 32px;
+        text-align: center;
+    }
+}
